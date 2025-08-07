@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent; /* removes mobile tap highlight */
+    -webkit-focus-ring-color: transparent;    /* removes iOS focus ring */
+    outline: none;                             /* removes blue outline */
+  }
+
+  *:focus {
+    outline: none;
+    box-shadow: none; /* removes Tailwind focus ring shadow */
+  }
+}
